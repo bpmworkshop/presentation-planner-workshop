@@ -7,7 +7,7 @@
   <title>Business Resource Planner Workshop</title>
 
   <meta name="description" content="Online Business Resource Planner workshop.">
-  <meta name="author" content="Eric D. Schabell">
+  <meta name="author" content="Jaen Swart & Eric D. Schabell">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -44,78 +44,122 @@
     <div class="slides">
         <section>
             <div style="width: 1056px; height: 300px;">
-                <h1>Lab 1</h1>
+                <h1>Lab 4</h1>
             </div>
             <div style="width: 1056px; height: 200px;">
-                <h2>Install the</h2>
-                <h2>Business Resource Planner</h2>
+                <h2>Customizing Score Functions</h2>
+                <h2>Schedule Angry Nurses</h2>
+            </div>
+            <div style="width: 1056px; height: 150px;" align="right">
+                <img src="images/angry-nurse.gif">
+            </div>
+        </section>
+
+        <section>
+            <div style="width: 1056px; height: 300px;">
+                <h1>Just a min...</h1>
+                <h5>(Before we can deal with Angry Nurses)</h5>
+            </div>
+            <div style="width: 1056px; height: 200px;">
+                <h3>We need to learn some of the basic building blocks before we can tackle the difficult job of making angry nurses happy, so...</h3>
             </div>
         </section>
 
         <section data-background-color="white">
-            <div style="width: 1056px; height: 150px;">
+            <div style="width: 1056px; height: 200px;">
                 <h2>Lab Goal</h2>
-                <h4>To install Business Resource Planner component.</h4>
+                <h4>
+                    To setup lab project where we will work on cloud balancing
+                    our workloads across the available computing resources.
+                </h4>
             </div>
-            <div style="width: 1056px; height: 580px;">
-                <img height="100%" src="images/bpmsuite-arch.png">
+            <div style="width: 1056px; height: 500px;">
+                <img src="images/image4-1.png">
             </div>
         </section>
 
-        <section>
-            <div style="width: 1056px; height: 200px;">
-                <h2>Workshop prerequisites</h2>
-            </div>
-            <div style="width: 1056px; height: 600px;">
-                <ul>
-                    <li>The following JBoss products:</li>
-                    <ul>
-                        <li>JBoss BRMS Business Resource Planner 6.1 installer</li>
-                        <li>JBoss EAP 6.4 installer</li>
-                        <li>JBoss Developer Studio 8.1.0</li>
-                    </ul>
-                    <li>Java 1.7 or 1.8</li>
-                    <li>Maven 3.2 or higher</li>
-                    <li>Basic understanding of Java development.</li>
-                    <li>Basic understanding of Drools Rule Language (DRL).</li>
-                </ul>
-            </div>
-        </section>
+
+<!--
+
+
 
         <section data-background-color="white">
-            <div style="width: 1056px; height: 150px;">
-                <h2>Download product</h2>
-                <h4><a href="http://www.jboss.org/download-manager/file/jboss-bpmsuite-6.1.0.GA-zip_planner.zip" style="color: red" target="_blank">JBoss BRMS Business Resource Planner</a></h4>
+            <div style="width: 1056px; height: 200px;">
+                <h2>Download</h2>
+                <h3><a href="http://www.jboss.org/products/devstudio/download/" style="color: red" target="_blank">JBoss.org for latest installer.</a></h3>
             </div>
             <div style="width: 1056px; height: 600px;">
-                <a href="http://www.jboss.org/products/bpmsuite/download/" target="_blank"><img src="images/image1-1.png"></a>
+                <a href="http://www.jboss.org/products/devstudio/download/" style="color: red" target="_blank"><img src="images/jbds-download.png"></a>
+            </div>
+        </section>
+
+        <section>
+            <div style="width: 1056px; height: 300px;">
+                <h2>Workspace</h2>
+                <h3>Install, startup and select project workspace</h3>
+            </div>
+            <div style="width: 1056px; height: 100px;">
+                <ul>
+                    <li><code>BRMS-PLANNER-WORKSHOP/PROJECTS</code></li>
+                </ul>
+            </div>
+            <div style="width: 1056px; height: 400px;" align="right">
+                <img src="images/jbds-planner-workspace.png">
             </div>
         </section>
 
         <section>
             <div style="width: 1056px; height: 200px;">
-                <h2>Installation</h2>
-                <h3>Business Resource Planner</h3>
+                <h2>Planner Tooling</h2>
+                <h3>JBoss Central SW Update Tab (bottom)</h3>
             </div>
-            <div style="width: 1056px; height: 600px;">
+            <div style="width: 1056px; height: 80px;">
                 <ul>
-                    <li><a href="https://github.com/eschabell/business-resource-planner-workshop/archive/master.zip" style="color: red" target="_blank">Download and unzip.</a></li>
-                    <li>Add product, see installs/README for details</li>
-                    <ul>
-                        <li><code>$ cp jboss-brms-6.1.0.GA-planner-engine.zip business-resource-planner-workshop/installs/</code></li>
-                        <li><code>$ cp jboss-brms-6.1.0.GA-planner-engine.zip business-resource-planner-workshop/installs/</code></li>
-                    </ul>
-                    <li>Run init.sh or init.bat</li>
-                    <ul>
-                        <li><code>$ ./init.sh</code></li>
-                    </ul>
-                    <li>Read and follow instructions shown during installation.</li>
+                    <li><code>select enable early access and rules development</code></li>
+                    <li><code>click on install button (bottom left)</code></li>
                 </ul>
+            </div>
+            <div style="width: 1156px; height: 600px;">
+                <img src="images/jbds-sw-updates.png" width="48%"> <img src="images/jbds-sw-updates-early.png" width="48%">
             </div>
         </section>
 
         <section>
-            <img src="images/image1-2.png">
+            <div style="width: 1056px; height: 150px;">
+                <h2>Planner Tooling</h2>
+            </div>
+            <div style="width: 1056px; height: 80px;">
+                <ul>
+                    <li><code>click through accepting until install starts</code></li>
+                </ul>
+            </div>
+            <div style="width: 1156px; height: 550px;">
+                <img src="images/jbds-install-tooling.png">
+            </div>
+        </section>
+
+        <section>
+            <div style="width: 1056px; height: 150px;">
+                <h2>Restart</h2>
+            </div>
+            <div style="width: 1056px; height: 80px;">
+                <ul>
+                    <li><code>install finishes with ask to restart</code></li>
+                    <li><code>click yes</code></li>
+                </ul>
+            </div>
+            <div style="width: 1156px; height: 550px;">
+                <img src="images/jbds-restart.png">
+            </div>
+        </section>
+
+        <section>
+            <div style="width: 1056px; height: 100px;">
+                <h2>Ready to Plan</h2>
+            </div>
+            <div style="width: 1156px; height: 600px;">
+                <img src="images/jbds-ready.png">
+            </div>
         </section>
 
         <section data-background-color="white">
@@ -152,9 +196,11 @@
                 <h3>Business Resource Planner</h3>
             </div>
             <div style="width: 1056px; height: 600px; color: white">
-                <h3><a href="lab02.html" style="color: red" target="_blank">Lab 02 - Install JBoss Developer Studio</a></h3>
+                <h3><a href="lab03.html" style="color: red" target="_blank">Lab 03 - Customizing score function</a></h3>
+                <h3><a href="lab03.html" style="color: red" target="_blank">Scheduling Angry Nurses</a></h3>
             </div>
         </section>
+-->
     </div>
   </div>
 
